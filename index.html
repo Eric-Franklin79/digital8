@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Digital 6</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/boot.js"></script>
+    <script src="js/preload.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/howToPlay.js"></script>
+    <script src="js/scene1.js"></script>
+    <script src="js/level1.js"></script>
+    <script src="js/gameOver.js"></script>
+    <script src="js/win.js"></script>
+    
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+<script>
+	(function() {
+		var game = new Phaser.Game( 1280, 640, Phaser.CANVAS, 'game' );
+    	    	    game.state.add('boot', BootState);
+    	    	    game.state.add('preload', PreloadState);
+    	    	    game.state.add('menu', MenuState);
+    	    	    game.state.add('howToPlay', HowState);
+    	    	    game.state.add('scene1', Scene1State);
+    	    	    game.state.add('level1', Level1State);
+    	    	    game.state.add('gameOver', GameOverState);
+    	    	    game.state.add('win', WinState);
+    	    	    
+    	    	    
+    	    	    game.state.start('boot');
+    	    	    })();
+</script>
+
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>D7</h2>
+<ul>
+
+<li><strong>High Concept:</strong>
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+
+</li>
+
+<li><strong>Genre:</strong>
+</li>
+
+<li><strong>Game play:</strong>
+</li>
+
+<li><strong>Prototype goal:</strong>
+
+</li>
+
+<li><strong>Features:</strong>
+</li>
+
+<li><strong>Setting/Premise:</strong>
+</li>
+
+<li><strong>Story:</strong>
+</li>
+
+<li><strong>Target Audience:</strong>
+</li>
+
+<li><strong>Play time:</strong>
+</li>
+
+<li><strong>Strategies:</strong>
+</li>
+
+<li><strong>Prototype Assets:</strong>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+</li>
+
+</ul>
+</div>
+</body>
+</html>
