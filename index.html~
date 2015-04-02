@@ -7,9 +7,8 @@
     <script src="js/boot.js"></script>
     <script src="js/preload.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/howToPlay.js"></script>
-    <script src="js/scene1.js"></script>
-    <script src="js/level1.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/loto.js"></script>
     <script src="js/gameOver.js"></script>
     <script src="js/win.js"></script>
     
@@ -32,8 +31,8 @@ body
     	    	    game.state.add('preload', PreloadState);
     	    	    game.state.add('menu', MenuState);
     	    	    game.state.add('howToPlay', HowState);
-    	    	    game.state.add('scene1', Scene1State);
-    	    	    game.state.add('level1', Level1State);
+    	    	    game.state.add('store', StoreState);
+    	    	    game.state.add('loto', LotoState);
     	    	    game.state.add('gameOver', GameOverState);
     	    	    game.state.add('win', WinState);
     	    	    
@@ -47,11 +46,10 @@ body
 <body>
 <div id="game"></div>
 <div id="readme">
-<h2>No Good Deed</h2>
+<h2>D7</h2>
 <ul>
 
 <li><strong>High Concept:</strong>
-Helping out a stranger has turned to the worst and now you must run for your life.
 </li>
 
 <li><strong>Player Experience Goals:</strong>
@@ -59,13 +57,9 @@ Helping out a stranger has turned to the worst and now you must run for your lif
 </li>
 
 <li><strong>Genre:</strong>
-The genre for this game is side scroller.
 </li>
 
 <li><strong>Game play:</strong>
-The game play of the game is the standard arrows keys, left and right to move and up to jump. 
-You have to monover through thte city to escape your enemy. Collect scattered batteries to keep the phone charged.
-This game also features touch play! one finger to move right and two to jump. *There is no moving left for touch play*
 </li>
 
 <li><strong>Prototype goal:</strong>
@@ -73,36 +67,27 @@ This game also features touch play! one finger to move right and two to jump. *T
 </li>
 
 <li><strong>Features:</strong>
-This game features multiple ways to play the game. This game is a simple side scroller, you run to the right jumping over obstacles and collecting items.
 </li>
 
 <li><strong>Setting/Premise:</strong>
-The setting of this game is a city street.
 </li>
 
 <li><strong>Story:</strong>
-You are walking down the stret and you see someones phone fall out of their pocket. Being th ekind person you are you go and pick it up for them.
-As you pick up the phone and get the strangers attention, you see on the creen of the phone that he is looking to capture you. Now you have to run awway from this stranger to save your life.
 </li>
 
 <li><strong>Target Audience:</strong>
-The target audience is for anyone wanting to play. 
 </li>
 
 <li><strong>Play time:</strong>
-The play time of the game can range 5 - 10 minuites.
 </li>
 
 <li><strong>Strategies:</strong>
-Play the game a few times to know when to jump and find the best route to collect the most batteries.
 </li>
 
 <li><strong>Prototype Assets:</strong>
-i created al of my own assets
 </li>
 
 <li><strong>Prototype Closest Other Game:</strong>
-The closets game my game rembles would be super mario
 </li>
 
 </ul>
