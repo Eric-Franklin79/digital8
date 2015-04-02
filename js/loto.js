@@ -86,7 +86,7 @@ LotoState.prototype = {
 						this.moneyText.setText("Wallet: $" + String(this.money));
 					}
 					this.screen = 0;
-					//this.reset();
+					this.check = 0;
 			}
 		}
 		else if(this.screen === 5){
