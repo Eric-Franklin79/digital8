@@ -9,7 +9,8 @@ PreloadState.prototype = {
 		loading.animations.play('move');
 		
 		//load everything else
-		
+		this.game.laod.image('canvasBackground', ' assets/canvas.png');
+		this.game.load.image('car', 'assets/car.png');
 	},
 	create: function(){
 		this.game.state.start("menu");
