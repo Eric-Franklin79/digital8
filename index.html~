@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Digital 6</title>
+    <title>Digital 7</title>
     <script src="js/phaser.js"></script>
     <script src="js/boot.js"></script>
     <script src="js/preload.js"></script>
@@ -26,11 +26,10 @@ body
 </style>
 <script>
 	(function() {
-		var game = new Phaser.Game( 1280, 640, Phaser.CANVAS, 'game' );
+		var game = new Phaser.Game( 400, 500, Phaser.CANVAS, 'game' );
     	    	    game.state.add('boot', BootState);
     	    	    game.state.add('preload', PreloadState);
     	    	    game.state.add('menu', MenuState);
-    	    	    game.state.add('howToPlay', HowState);
     	    	    game.state.add('store', StoreState);
     	    	    game.state.add('loto', LotoState);
     	    	    game.state.add('gameOver', GameOverState);
@@ -46,48 +45,62 @@ body
 <body>
 <div id="game"></div>
 <div id="readme">
-<h2>D7</h2>
+<h2>New Life Of Luck</h2>
 <ul>
 
 <li><strong>High Concept:</strong>
+Try to aquire enough money to start a new life through playing lottery scratch cards.
 </li>
 
 <li><strong>Player Experience Goals:</strong>
-
+I want the player to experience that their choices have a great impact on the game. If they play risky
+they could come out on top or fall all the way to the bottom.
 </li>
 
 <li><strong>Genre:</strong>
+Luck
 </li>
 
 <li><strong>Game play:</strong>
+Click on a card to buy it, click on the hidden numbers to reveal them. Some of the cards have
+ different ways to win so read the card instructions.
 </li>
 
 <li><strong>Prototype goal:</strong>
-
+My goal was to make a game with different way to play and win.
 </li>
 
 <li><strong>Features:</strong>
+This game features five different lottery sratch cards. 
 </li>
 
 <li><strong>Setting/Premise:</strong>
+The setting is at a convience store.
 </li>
 
 <li><strong>Story:</strong>
+Your life is going down hill and all you want to do is escape and start new. Right now you can't 
+ due to lacking of funds. Play the lottery to get enough money to leave it all and start fresh.
 </li>
 
 <li><strong>Target Audience:</strong>
+Anyone
 </li>
 
 <li><strong>Play time:</strong>
+2 - 7 minuites
 </li>
 
 <li><strong>Strategies:</strong>
+Learn to play the random generater. The correct combination of different cards could heelp you win faster.
 </li>
 
 <li><strong>Prototype Assets:</strong>
+I created all of my own assets!
 </li>
 
 <li><strong>Prototype Closest Other Game:</strong>
+
 </li>
 
 </ul>

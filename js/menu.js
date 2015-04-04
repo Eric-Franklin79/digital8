@@ -8,7 +8,7 @@ MenuState.prototype = {
 	},
     	play: function(){
     		var money = 10;
-    		this.game.state.start("loto");
+    		this.game.state.start("canvas");
     	},
     	
     	    

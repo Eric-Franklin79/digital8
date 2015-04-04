@@ -4,11 +4,11 @@ var MenuState= function(game){}
 MenuState.prototype = {
 	create: function(){
 		var background = this.game.add.sprite(0,0, 'menuBackground');
-		var playButton = this.game.add.button(154, 358, 'moneyButton', this.play, this);		
+		var playButton = this.game.add.button(150, 350, 'moneyButton', this.play, this);		
 	},
     	play: function(){
     		var money = 10;
-    		this.game.state.start("loto", true, false, this.money);
+    		this.game.state.start("loto");
     	},
     	
     	    

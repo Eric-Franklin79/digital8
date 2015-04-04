@@ -9,23 +9,7 @@ PreloadState.prototype = {
 		loading.animations.play('move');
 		
 		//load everything else
-		this.game.load.image('menuBackground', 'assets/menuBackground.png');
-		this.game.load.image('moneyButton', 'assets/moneyButton.png');
-		this.game.load.image('lotoBackground', 'assets/lotoBackground.png');
-		this.game.load.image('1Button', 'assets/1Button.png');
-		this.game.load.image('5Button', 'assets/5Button.png');
-		this.game.load.image('10Button', 'assets/10Button.png');
-		this.game.load.image('20Button', 'assets/20Button.png');
-		this.game.load.image('50Button', 'assets/50Button.png');
-		this.game.load.image('contButton', 'assets/contButton.png');
-		this.game.load.image('screen1', 'assets/screen1.png');
-		this.game.load.image('screen5', 'assets/screen5.png');
-		this.game.load.image('screen10', 'assets/screen10.png');
-		this.game.load.image('screen20', 'assets/screen20.png');
-		this.game.load.image('screen50', 'assets/screen50.png');
-		this.game.load.image('cover', 'assets/cover.png');
-		this.game.load.image('winScreen', 'assets/winScreen.png');
-		this.game.load.image('gameOverScreen', 'assets/gameOverScreen.png');
+		
 	},
 	create: function(){
 		this.game.state.start("menu");
