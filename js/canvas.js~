@@ -1,11 +1,10 @@
 "use strict";
 var CanvasState = function(game){
 var bmd, screen, car;
-var loopButton, rightButton, leftButton, lineButton, redButton, greenButton, blueButton, blackButton, yellowButton;
+var loopButton, rightButton, leftButton, lineButton;
 var i = 0, j = 0; 
 var camera;
 var state, facing;
-var color = "white";
 }
 
 CanvasState.prototype = {
@@ -25,50 +24,30 @@ CanvasState.prototype = {
 		this.rightButton = this.game.add.button(60, 550, 'right', this.right, this);
 		this.leftButton = this.game.add.button(115, 550, 'left', this.left, this);
 		this.lineButton = this.game.add.button(5, 550, 'line', this.line, this);
-		this.redButton = this.game.add.button(190, 550, 'redB', this.red, this);
-		this.greenButton = this.game.add.button(245, 550, 'greenB', this.green, this);
-		this.blueButton = this.game.add.button(300, 550, 'blueB', this.blue, this);
-		this.yellowButton = this.game.add.button(355, 550, 'yellowB', this.yellow, this);
-		this.blackButton = this.game.add.button(410, 550, 'blackB', this.black, this);
-		this.whiteButton = this.game.add.button(465, 550, 'whiteB', this.white, this);
-		this.doneButton = this.game.add.button(520, 550, 'doneB', this.done, this);
-		//this.
 		
 		//
 		this.lineButton.fixedToCamera = true;
 		this.rightButton.fixedToCamera = true;
 		this.leftButton.fixedToCamera = true;
-		this.redButton.fixedToCamera = true;
-		this.blueButton.fixedToCamera = true;
-		this.yellowButton.fixedToCamera = true;
-		this.greenButton.fixedToCamera = true;
-		this.blackButton.fixedToCamera = true;
-		this.whiteButton.fixedToCamera = true;
-		this.doneButton.fixedToCamera = true;
-		this.color = "white";
 		this.facing = "right";
 	},
 	update: function(){
-		if(this.state === "done"){
-				
-		}
-		else{
+		
 		
 			if(this.facing === "right"){
-				this.bmd.rect(this.car.x, this.car.y - 23, 1, 46, this.color);
+				this.bmd.rect(this.car.x, this.car.y - 23, 1, 46, "black");
 			}
 			else if( this.facing === "up"){
-				this.bmd.rect(this.car.x - 23, this.car.y , 46, 1, this.color);
+				this.bmd.rect(this.car.x - 23, this.car.y , 46, 1, "black");
 
 			}
 			else if(this.facing === "left"){
-				this.bmd.rect(this.car.x, this.car.y - 23, 1, 46, this.color);
+				this.bmd.rect(this.car.x, this.car.y - 23, 1, 46, "black");
 			}
 			else if(this.facing === "down"){
-				this.bmd.rect(this.car.x - 23, this.car.y , 46, 1, this.color);
+				this.bmd.rect(this.car.x - 23, this.car.y , 46, 1, "black");
 
 			}
-		}
 		
 	},
 	loop: function(){
@@ -160,40 +139,6 @@ CanvasState.prototype = {
 		}
 		this.state = "line";
 		
-	},
-	red: function(){
-		this.color = "red";
-	},
-	green: function(){
-		this.color = "green";
-	},
-	blue: function(){
-		this.color = "blue";
-	},
-	yellow: function(){
-		this.color = "yellow";
-	},
-	black: function(){
-		this.color = "black";
-	},
-	white: function(){
-		this.color = "white";
-	},
-	done: function(){
-		this.state = "done";	
-		this.car.kill();
-		this.game.add.tween(this.screen.scale).to( { x: .652, y: .326 }, 2000, Phaser.Easing.Linear.None, true);
-		this.game.camera.reset();
-		this.lineButton.kill();
-		this.rightButton.kill();
-		this.leftButton.kill();
-		this.redButton.kill();
-		this.blueButton.kill();
-		this.yellowButton.kill();
-		this.greenButton.kill();
-		this.blackButton.kill();
-		this.whiteButton.kill();
-		this.doneButton.kill();
 	}
 	
 }
